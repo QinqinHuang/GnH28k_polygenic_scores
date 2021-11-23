@@ -15,6 +15,9 @@ source("My_functions_GnH_PGS.R")
 
 # "PGStrait_pairs": a file with all PGS-trait pairs that need to be tested
 
+# "phenotable_2ndexcl": this table contains phenotype and covariate data for unrelated individuals. 
+# code for removing related samples can be found in "remove_rel" and "remove_rel_pheno" functions in the "My_functions_GnH_PGS.R" file.
+
 
 #----- test for associations -----
 PGSpfm = foreach(ii = 1:nrow(PGStrait_pairs), .combine = rbind) %do% {
