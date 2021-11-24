@@ -49,14 +49,13 @@ allstats = foreach(ff = filelist, .combine = rbind) %do% {
 allstats = allstats[, .(phenotype, trait, GWASsumm, ancestry,
                         N, prevalence, agedata, transformation,
                         LDr2, pval_threshold, bestscore,
-                        full_R2, null_R2, incR2, incR2_CI_L, incR2_CI_U, bootstrapest,
-                        PRS_beta, PRS_se, PRS_p,
-                        AUC_full, AUC_null)]
+                        full_R2, null_R2, incR2, incR2_CI_L, incR2_CI_U, incR2_bootstrapest,
+                        AUC_full, AUC_null, incAUC, incAUC_CI_L, incAUC_CI_U, incAUC_bootstrapest,
+                        PRS_beta, PRS_se, PRS_p )]
 
 
 ## best PGS per trait-GWAS pair
 bestPGS = allstats[bestscore == "BestScore"]
-bestPGS = bestPGS[order(trait, phenotype, ancestry, GWASsumm)]
 
 
 
