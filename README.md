@@ -40,3 +40,6 @@ This method (https://onlinelibrary.wiley.com/doi/10.1002/gepi.22083) combines a 
 2: performing multiple imputation to impute missing data in QRISK3 continuous variables, and calculating QRISK3 scores
 
 3: calculating the integrated score combining QRISK3 and PGS, running the Cox regression model to estimate C-index, and calculating the net reclasssification indices (NRI; both categorical and continuous NRI)
+
+
+#### Code for calculating power for replicating GWAS loci is available at https://github.com/Nsallah1/GH_Manuscript
