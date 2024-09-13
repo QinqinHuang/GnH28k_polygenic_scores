@@ -3,6 +3,7 @@
 Code used to calculate polygenic scores (PGS) and assess its performance. 
 
 Preprint: https://www.medrxiv.org/content/10.1101/2021.06.22.21259323v1. 
+
 Published in Nature Communications: https://www.nature.com/articles/s41467-022-32095-5
 
 
